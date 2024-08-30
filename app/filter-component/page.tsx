@@ -10,40 +10,40 @@ interface ResultsInterface {
 
 const Page = () => {
 
-    const [getResult, setResult] = useState('');
+    const [getResult, setResult] = useState("");
 
     const Filters = {
         "Meal Type:":  [
             {
-                label: 'Breakfast',
-                param: '&mealType=breakfast'
+                label: "Breakfast",
+                param: "&mealType=breakfast"
             },
             {
-                label: 'Dinner',
-                param: '&mealType=Dinner'
+                label: "Dinner",
+                param: "&mealType=Dinner"
             }
         ],  
         "Diet:": [
             {
-                label: 'Balanced',
-                param: '&diet=balanced'
+                label: "Balanced",
+                param: "&diet=balanced"
             },
             {
-                label: 'High Fiber',
-                param: '&diet=high-fiber'
+                label: "High Fiber",
+                param: "&diet=high-fiber"
             },
             {
-                label: 'High Protein',
-                param: '&diet=high-protein'
+                label: "High Protein",
+                param: "&diet=high-protein"
             }
         ]
     }
 
     function onSubmit(result:Array<Array<ResultsInterface>>) {
         const Result = result.flat().map((item) => {
-            return item.param !== undefined ? item.param : '';
+            return item.param !== undefined ? item.param : "";
         });
-        setResult(Result.join(''));
+        setResult(Result.join(""));
     }  
  
     return (
@@ -61,26 +61,26 @@ const Page = () => {
                                 const Filters = {
                                     "Meal Type:":  [
                                         {
-                                            label: 'Breakfast',
-                                            param: '&mealType=breakfast'
+                                            label: "Breakfast",
+                                            param: "&mealType=breakfast"
                                         },
                                         {
-                                            label: 'Dinner',
-                                            param: '&mealType=Dinner'
+                                            label: "Dinner",
+                                            param: "&mealType=Dinner"
                                         }
                                     ],              
                                     "Diet:": [
                                         {
-                                            label: 'Balanced',
-                                            param: '&diet=balanced'
+                                            label: "Balanced",
+                                            param: "&diet=balanced"
                                         },
                                         {
-                                            label: 'High Fiber',
-                                            param: '&diet=high-fiber'
+                                            label: "High Fiber",
+                                            param: "&diet=high-fiber"
                                         },
                                         {
-                                            label: 'High Protein',
-                                            param: '&diet=high-protein'
+                                            label: "High Protein",
+                                            param: "&diet=high-protein"
                                         }
                                     ]
                                 }
@@ -104,27 +104,27 @@ const Page = () => {
 
                             <li>
                                 <p>Text for Apply button.</p>
-                                <code>{`applyButtonText={'Apply Filters'}`}</code> 
+                                <code>{`applyButtonText={"Apply Filters"}`}</code> 
                             </li>
 
                             <li>
                                 <p>Text for clear button.</p>
-                                <code>{`applyButtonText={'Apply Filters'}`}</code> 
+                                <code>{`applyButtonText={"Apply Filters"}`}</code> 
                             </li>
     
                             <li>
                                 <p>Remove filter icon, accepts string or react component.</p>
-                                <code>{`selectedFilterRemoveIcon={'X'}`}</code> 
+                                <code>{`selectedFilterRemoveIcon={"X"}`}</code> 
                             </li>
   
                             <li>
                                 <p>Set background colour of selected filters.</p>
-                                <code>{`selectedFilterBackgroundColour={'blue'}`}</code> 
+                                <code>{`selectedFilterBackgroundColour={"blue"}`}</code> 
                             </li>
 
                             <li>
                                 <p>Set text colour for selected filters.</p>
-                                <code>{`selectedFilterTextColour={'#fff'}`}</code> 
+                                <code>{`selectedFilterTextColour={"#fff"}`}</code> 
                             </li>
 
                         </ul>
@@ -135,13 +135,13 @@ const Page = () => {
                     <FilterComponent 
                         filters={Filters} 
                         onSubmit={onSubmit}
-                        applyButtonText={'Apply Filters'}
-                        clearButtonText={'Clear Filters'} 
-                        selectedFilterRemoveIcon={'X'}
-                        selectedFilterBackgroundColour={'#2c514c'}
-                        selectedFilterTextColour={'#fff'}
+                        applyButtonText={"Apply Filters"}
+                        clearButtonText={"Clear Filters"} 
+                        selectedFilterRemoveIcon={"X"}
+                        selectedFilterBackgroundColour={"#2c514c"}
+                        selectedFilterTextColour={"#fff"}
                     />
-                    <div style={{marginTop: '1rem', padding: '1rem', backgroundColor: '#eeeeee'}}>
+                    <div style={{marginTop: "1rem", padding: "1rem", backgroundColor: "#eeeeee"}}>
                         <span>Result: </span> <span>{getResult}</span>
                     </div>
                 </div>

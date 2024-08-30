@@ -30,8 +30,8 @@ const Page = () => {
                             </li>
 
                             <li>
-                                <p>Options: 'mobile', 'tablet', 'desktop'</p>
-                                <code>{`deviceType={'mobile'}`}</code> 
+                                <p>Options: "mobile", "tablet", "desktop"</p>
+                                <code>{`deviceType={"mobile"}`}</code> 
                             </li>
 
                             <li>
@@ -80,7 +80,7 @@ const Page = () => {
                 <div className="package-demo-wrapper">
                     <h2 className="alternate">Mobile</h2>
                     <DeviceComponent 
-                        deviceType={'mobile'} 
+                        deviceType={"mobile"} 
                         deviceWidth={400} 
                         deviceHeight={600} 
                         scaleDesktop={1}
@@ -94,7 +94,7 @@ const Page = () => {
                     </DeviceComponent>
                     <h2 className="alternate">Desktop</h2>
                     <DeviceComponent 
-                        deviceType={'desktop'} 
+                        deviceType={"desktop"} 
                         deviceWidth={1620} 
                         deviceHeight={1000} 
                         scaleDesktop={.4}

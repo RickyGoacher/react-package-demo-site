@@ -44,7 +44,7 @@ const Page = () => {
                            
                             <li>
                                 <p>Text for load more button.</p>
-                                <code>{`loadMoreText={'Load More'}`}</code> 
+                                <code>{`loadMoreText={"Load More"}`}</code> 
                             </li>
 
                             <li>
@@ -79,7 +79,7 @@ const Page = () => {
 
                             <li>
                                 <p>Takes an object of styles following standard react inline styling.</p>
-                                <code>{`itemWrapperStyling={{display: 'flex', flexDirection: 'row', flexWrap: "wrap", gap: "12px", padding: "1rem"}}`}</code> 
+                                <code>{`itemWrapperStyling={{display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "12px", padding: "1rem"}}`}</code> 
                             </li>
 
                             <li>
@@ -94,14 +94,14 @@ const Page = () => {
                     <LoadMoreComponent 
                         limit={4} 
                         incrementBy={4}
-                        loadMoreText={'Load More'}
+                        loadMoreText={"Load More"}
                         showLessText={"Show Less"} 
                         buttonStyling={{padding: "1rem 2rem", borderRadius: "4px", border: "0"}}
                         loadMoreButtonBackgroundColour={"#2c514c"}
                         showLessButtonBackgroundColour={"darkgrey"}
                         loadMoreButtonTextColour={"white"}
                         showLessButtonTextColour={"white"}
-                        itemWrapperStyling={{display: 'flex', flexDirection: 'row', flexWrap: "wrap", gap: "12px", padding: "1rem"}}
+                        itemWrapperStyling={{display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "12px", padding: "1rem"}}
                         unableToLoadText="Unable to Load"
                     >
                         <div className={classes["item"]}><span>Item</span></div>
