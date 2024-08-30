@@ -30,7 +30,7 @@ const Page = () => {
                             </li>
 
                             <li>
-                                <p>Options: "mobile", "tablet", "desktop"</p>
+                                <p>Options: &quot;mobile&quot;, &quot;tablet&quot;, &quot;desktop&quot;</p>
                                 <code>{`deviceType={"mobile"}`}</code> 
                             </li>
 
