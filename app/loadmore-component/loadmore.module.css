@@ -1,0 +1,16 @@
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 24%;
+    padding: 2rem;
+    background-color: #2c514c;
+    color: white;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        flex-basis: 47%;
+    }
+}
