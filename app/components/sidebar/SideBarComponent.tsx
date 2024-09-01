@@ -30,6 +30,7 @@ const SideBarComponent = (props:SidebarInterface) => {
                 <li><Link href="/loadmore-component">Load More Component</Link></li>
                 <li><Link href="/filter-component">Filter Component</Link></li>
                 <li><Link href="/device-emulator-component">Device Emulator Component</Link></li>
+                <li><Link href="/popup-component">Popup Component</Link></li>
             </ul>
         </aside>
         <main className={`${classes["main-section"]} ${getMenuState ? classes["active"] : classes["closed"]}`}>

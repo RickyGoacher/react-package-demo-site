@@ -16,6 +16,7 @@
     "react-estimated-delivery": "^1.0.5",
     "react-filter-checkbox-component": "^1.0.6",
     "react-loadmore": "^1.0.0",
+    "react-popup-component-simple": "^1.0.0",
     "react-simple-device-emulator": "^1.0.2",
     "react-tabs-simple": "^1.0.0"
   },
