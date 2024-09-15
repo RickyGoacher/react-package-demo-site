@@ -20,17 +20,66 @@ const Page = () => {
                         <ul>
                             <li>
                                 <p>{`The <TabsComponent> child elements MUST follow this format`}</p>
-                                <code>
-                                    {`
-                                        <>
-                                            <div className="title">
+<code>
+<pre>
+{`
+    <>
+        <div className="title">
 
-                                            </div>
-                                            <div className="content">
+        </div>
+        <div className="content">
        
-                                            </div>
-                                        </> 
-                                    `}
+        </div>
+    </> 
+    
+`}  
+</pre>
+</code>
+<code>
+<pre>
+{`
+    <TabsComponent 
+        tabPadding={"1rem"} 
+        tabColour={"white"} 
+        tabBackgroundColour={"#2C514C"} 
+        tabRowBackgroundColour={"#355853"}
+        contentPadding={"1rem"} 
+        contentColour={"black"} 
+        contentBackgroundColour={"white"} 
+    >
+        <>
+            <div className="tab">
+                <h3>Number One</h3>
+            </div>
+            <div className="content">
+                <p> Mauris interdum porta libero, eget varius metus dignissim id. Duis sollicitudin lacinia ipsum sed tempor. Praesent dapibus euismod euismod. Nulla neque libero, pellentesque ac quam a, bibendum mattis massa. Ut vehicula justo sit amet sagittis sagittis.</p>
+            </div>
+        </>
+        <>
+            <div className="tab">
+                <h3>Number Two</h3>
+            </div>
+            <div className="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, leo vel sodales auctor, lorem leo vehicula magna, nec tincidunt leo nunc vel diam. Aenean aliquet eleifend volutpat.</p> 
+                <p>Maecenas efficitur molestie metus in ultricies. Suspendisse porta, nisl et blandit congue, velit est ultricies augue, nec ullamcorper arcu sapien tempor ante.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, leo vel sodales auctor, lorem leo vehicula magna, nec tincidunt leo nunc vel diam. Aenean aliquet eleifend volutpat.</p>
+                <p> Maecenas efficitur molestie metus in ultricies. Suspendisse porta, nisl et blandit congue, velit est ultricies augue, nec ullamcorper arcu sapien tempor ante.</p>
+                <p> Mauris interdum porta libero, eget varius metus dignissim id. Duis sollicitudin lacinia ipsum sed tempor. </p>
+            </div>
+        </>
+        <>
+            <div className="tab">
+                <h3>Number Three</h3>
+            </div>
+            <div className="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, leo vel sodales auctor, lorem leo vehicula magna, nec tincidunt leo nunc vel diam. Aenean aliquet eleifend volutpat.</p> 
+                <p> Mauris interdum porta libero, eget varius metus dignissim id. Duis sollicitudin lacinia ipsum sed tempor. </p>
+                <p>Maecenas efficitur molestie metus in ultricies. Suspendisse porta, nisl et blandit congue, velit est</p>
+            </div>
+        </>
+    </TabsComponent>
+`}  
+</pre>                                         
                                 </code>
                             </li>
                             <li>

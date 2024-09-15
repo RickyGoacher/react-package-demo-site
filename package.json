@@ -18,6 +18,7 @@
     "react-loadmore": "^1.0.0",
     "react-popup-component-simple": "^1.0.0",
     "react-simple-device-emulator": "^1.0.2",
+    "react-stepper-component-simple": "^1.0.0",
     "react-tabs-simple": "^1.0.0"
   },
   "devDependencies": {

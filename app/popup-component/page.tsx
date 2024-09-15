@@ -39,26 +39,28 @@ const Page = () => {
                             <li>
                                 <p>{`The <PopupComponent> can accept any element between the opening and closing tag, this is the content of the popup.`}</p>
                                 <code>
-                                    {`
-                                        <PopupComponent 
-                                            triggerOnDelay={false}
-                                            triggerOnScroll={true}
-                                            scrollTriggerDistance={400}
-                                            delay={3000}
-                                            zIndex={100}
-                                            overlayStyles={{backgroundColor: "#131313", opacity: "0.8"}}
-                                            popupWrapperStyles={{backgroundColor: "white", width: "60%", height: "500px"}}
-                                            popupContentStyles={{padding: "1rem"}}
-                                            closeIcon={<Image alt="" src={CloseIcon} height={24} width={24}></Image>}
-                                            closeIconStyles={{padding: "1rem"}}
-                                            cookieName={"custompopup"}
-                                            cookieExpirationDays={1}
-                                        >
-                                            <h2>Example Popup Title</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, leo vel sodales auctor, lorem leo vehicula magna, nec tincidunt leo nunc vel diam. Aenean aliquet eleifend volutpat.</p> 
-                                            <button>Click Here!</button>
-                                        </PopupComponent>  
-                                    `}
+<pre>
+{`
+    <PopupComponent 
+        triggerOnDelay={false}
+        triggerOnScroll={true}
+        scrollTriggerDistance={400}
+        delay={3000}
+        zIndex={100}
+        overlayStyles={{backgroundColor: "#131313", opacity: "0.8"}}
+        popupWrapperStyles={{backgroundColor: "white", width: "60%", height: "500px"}}
+        popupContentStyles={{padding: "1rem"}}
+        closeIcon={<Image alt="" src={CloseIcon} height={24} width={24}></Image>}
+        closeIconStyles={{padding: "1rem"}}
+        cookieName={"custompopup"}
+        cookieExpirationDays={1}
+    >
+        <h2>Example Popup Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, leo vel sodales auctor, lorem leo vehicula magna, nec tincidunt leo nunc vel diam. Aenean aliquet eleifend volutpat.</p> 
+        <button>Click Here!</button>
+    </PopupComponent>  
+`}
+</pre>
                                 </code>
                             </li>
 

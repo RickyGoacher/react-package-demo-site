@@ -22,13 +22,16 @@ const Page = () => {
                             <li>
                                 <p>{`The <LoadMoreComponent> can accept any element between the opening and closing tag.`}</p>
                                 <code>
-                                    {`
-                                        <LoadMoreComponent>
-                                            <div className="item"><span>item</span></div>
-                                            <div className="item"><span>item</span></div>
-                                            <div className="item"><span>item</span></div>
-                                        </LoadMoreComponent>
-                                    `}
+<pre>
+{`  
+    <LoadMoreComponent>
+        <div className="item"><span>item</span></div>
+        <div className="item"><span>item</span></div>
+        <div className="item"><span>item</span></div>
+    </LoadMoreComponent>
+    
+`}
+</pre>
                                 </code>
                             </li>
 
