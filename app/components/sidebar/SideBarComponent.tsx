@@ -3,7 +3,12 @@
 import Link from "next/link";
 import classes from "./Sidebar.module.css";
 import { ReactNode, useState } from "react";
-import { SpeculationRules } from "react-speculation-rules";
+import dynamic from 'next/dynamic'
+
+const DynamicComponentWithNoSSR = dynamic(
+    () => import('./speculation-rule'),
+    { ssr: false }
+  )
 
 interface SidebarInterface {
     children: ReactNode;
@@ -38,7 +43,7 @@ const SideBarComponent = (props:SidebarInterface) => {
         <main className={`${classes["main-section"]} ${getMenuState ? classes["active"] : classes["closed"]}`}>
             {props.children}
         </main>
-        <SpeculationRules preRenderEagerness="moderate" preFetchEagerness="moderate" hrefMatches={["/*", "/popup-component", "/filter-component"]} excludeHrefs={["/logout", "/*\\?*(^|&)add-to-cart=*", ".no-prerender"]} excludeSelectors={["[rel~=nofollow]"]} prefetchUrls={["/", "/filter-component"]}></SpeculationRules>
+        <DynamicComponentWithNoSSR />
         </>
     );
 }
